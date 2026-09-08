@@ -18,7 +18,7 @@ interface ProductItem {
 const PRODUCTS: ProductItem[] = [
   {
     id: 'prod-alarm',
-    title: 'WakeUp AI',
+    title: 'Alarm Clock - WakeUp AI',
     subtitle: 'Smarter Alarms. Stronger You.',
     description:
       'Smart alarm app designed to make sure you actually wake up. Choose challenges like QR verification, walking, AI detection, and math. Works offline with privacy focused, on device processing. Wake up smarter, stay active, and start your day right.',
