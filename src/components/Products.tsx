@@ -1,4 +1,4 @@
-import { Star, Download, Sparkles, ExternalLink, ShieldCheck, Zap } from 'lucide-react';
+import { Star, Sparkles, ExternalLink, ShieldCheck, Zap } from 'lucide-react';
 
 interface ProductItem {
   id: string;
@@ -188,7 +188,7 @@ export default function Products() {
               </div>
 
               {/* Bottom Card Area: Distinct "Get it on Google Play" Button */}
-              <div className="pt-4 border-t border-slate-800/80 flex flex-col gap-3">
+              <div className="pt-4 border-t border-slate-800/80">
                 <a
                   href={PLAY_STORE_URL}
                   target="_blank"
@@ -232,15 +232,6 @@ export default function Products() {
                     <ExternalLink className="w-3.5 h-3.5" />
                   </div>
                 </a>
-
-                {/* Downloads telemetry */}
-                <div className="flex items-center justify-between text-[11px] font-mono text-slate-500 px-1">
-                  <span>DEV: WAKEUP AI</span>
-                  <span className="flex items-center gap-1 text-slate-400">
-                    <Download className="w-3 h-3 text-cyan-400" />
-                    {app.downloads}
-                  </span>
-                </div>
               </div>
 
             </div>
