@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none" width="280" height="60">
+  <defs>
+    <!-- Cyan Neon Glow Filters -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur1" />
+      <feGaussianBlur stdDeviation="6" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4" />
+      <stop offset="100%" stop-color="#00b4d8" />
+    </linearGradient>
+
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5d4" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+  </defs>
+
+  <!-- LOGO EMBLEM: Futuristic Geometric "W" + "A" -->
+  <g transform="translate(4, 4)">
+    <!-- Cyan Neon 'W' -->
+    <path d="M 6 12 L 20 44 L 32 18 L 44 44 L 56 12" 
+          stroke="url(#cyanGrad)" 
+          stroke-width="4.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" 
+          filter="url(#neonGlow)" />
+    
+    <path d="M 6 12 L 20 44 L 32 18 L 44 44 L 56 12" 
+          stroke="#ffffff" 
+          stroke-width="1.8" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" 
+          opacity="0.9" />
+
+    <!-- Sharp Solid White 'A' with Cyan Core Bar -->
+    <path d="M 62 44 L 74 12 L 86 44" 
+          stroke="#ffffff" 
+          stroke-width="5.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none" />
+    
+    <!-- Central Glowing Cyan Slit / Pillar for 'A' -->
+    <line x1="74" y1="28" x2="74" y2="44" 
+          stroke="#00f5d4" 
+          stroke-width="4" 
+          stroke-linecap="round" 
+          filter="url(#subtleGlow)" />
+  </g>
+
+  <!-- BRAND TYPOGRAPHY: WakeUp AI -->
+  <g transform="translate(104, 38)">
+    <text font-family="'Space Grotesk', -apple-system, sans-serif" 
+          font-weight="700" 
+          font-size="24" 
+          fill="#ffffff" 
+          letter-spacing="-0.03em">WakeUp</text>
+    
+    <text x="96" y="0" 
+          font-family="'Space Grotesk', -apple-system, sans-serif" 
+          font-weight="800" 
+          font-size="24" 
+          fill="url(#aiGradient)" 
+          filter="url(#subtleGlow)" 
+          letter-spacing="0.02em">AI</text>
+          
+    <text x="1" y="14" 
+          font-family="'JetBrains Mono', monospace" 
+          font-weight="600" 
+          font-size="7.5" 
+          fill="#00e5c7" 
+          letter-spacing="0.22em" 
+          opacity="0.9">STUDIO</text>
+  </g>
+</svg>

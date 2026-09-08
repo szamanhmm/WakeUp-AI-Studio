@@ -1,0 +1,195 @@
+
+  <svg width="800" height="1200" viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="warmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FAF7F2"/>
+        <stop offset="50%" stop-color="#F4EFE6"/>
+        <stop offset="100%" stop-color="#ECE5D8"/>
+      </linearGradient>
+      <linearGradient id="greenBadge" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#15803D"/>
+        <stop offset="100%" stop-color="#166534"/>
+      </linearGradient>
+      <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#78716C" flood-opacity="0.25"/>
+      </filter>
+    </defs>
+
+    <!-- Warm Cream Background -->
+    <rect width="800" height="1200" fill="url(#warmBg)"/>
+
+    <!-- Subtle Monstera Botanical Leaf Silhouette in Corner -->
+    <path d="M720 0 Q800 150 750 350 Q680 250 650 150 Z" fill="#D6D3CD" opacity="0.4"/>
+
+    <!-- Header & Logo -->
+    <g transform="translate(60, 60)">
+      <!-- Wallet Icon in Rounded Square -->
+      <rect width="64" height="64" rx="18" fill="#FFFFFF" stroke="#E7E5E4" stroke-width="2" filter="url(#cardShadow)"/>
+      <rect x="18" y="22" width="28" height="20" rx="5" fill="#44403C"/>
+      <circle cx="34" cy="32" r="3" fill="#84CC16"/>
+      <text x="85" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#1C1917">Auto Expense</text>
+      <text x="85" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#1C1917">Tracker</text>
+      <text x="85" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#78716C">via Notification (Offline)</text>
+    </g>
+
+    <!-- Right Script Callout -->
+    <text x="740" y="90" text-anchor="end" font-family="'Brush Script MT', 'Segoe Script', cursive, sans-serif" font-size="24" font-style="italic" fill="#57534E">
+      Your Expenses. Automatically.
+    </text>
+
+    <!-- Big Editorial Headline -->
+    <g transform="translate(60, 210)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="900" fill="#1C1917">Track Your</text>
+      <rect x="-4" y="16" width="270" height="48" rx="10" fill="#BBF7D0" opacity="0.6"/>
+      <text x="0" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="900" fill="#15803D">Expenses</text>
+      <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="900" fill="#1C1917">Effortlessly.</text>
+
+      <text x="0" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500" fill="#57534E" width="340">
+        <tspan x="0" dy="0">Auto Expense Tracker reads</tspan>
+        <tspan x="0" dy="26">your notifications, finds</tspan>
+        <tspan x="0" dy="26">money matters and keeps</tspan>
+        <tspan x="0" dy="26">your finances organized —</tspan>
+        <tspan x="0" dy="26" font-weight="700" fill="#1C1917">all offline, all for you.</tspan>
+      </text>
+    </g>
+
+    <!-- Feature Pillars -->
+    <g transform="translate(60, 480)">
+      <!-- 1. Auto Detects Expenses -->
+      <g transform="translate(0, 0)">
+        <circle cx="30" cy="30" r="26" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="2"/>
+        <path d="M30 18 C26 18 22 22 22 28 C22 36 18 38 18 38 L42 38 C42 38 38 36 38 28 C38 22 34 18 30 18 Z" fill="#059669"/>
+        <text x="75" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="800" fill="#1C1917">Auto Detects Expenses</text>
+        <text x="75" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#57534E">Reads bank, wallet &amp; payment alerts</text>
+      </g>
+
+      <!-- 2. Smart Categories -->
+      <g transform="translate(0, 85)">
+        <circle cx="30" cy="30" r="26" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="2"/>
+        <rect x="20" y="20" width="20" height="20" rx="4" fill="none" stroke="#16A34A" stroke-width="2.5"/>
+        <line x1="26" y1="26" x2="34" y2="26" stroke="#16A34A" stroke-width="2"/>
+        <line x1="26" y1="32" x2="34" y2="32" stroke="#16A34A" stroke-width="2"/>
+        <text x="75" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="800" fill="#1C1917">Smart Categories</text>
+        <text x="75" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#57534E">Earnings, Expenses &amp; Others</text>
+      </g>
+
+      <!-- 3. Multi-Currency Support -->
+      <g transform="translate(0, 170)">
+        <circle cx="30" cy="30" r="26" fill="#FEF3C7" stroke="#FDE68A" stroke-width="2"/>
+        <text x="30" y="36" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="900" fill="#D97706">৳ $ €</text>
+        <text x="75" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="800" fill="#1C1917">Multi-Currency Support</text>
+        <text x="75" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#57534E">Track in your preferred currency</text>
+      </g>
+
+      <!-- 4. 100% Offline & Secure -->
+      <g transform="translate(0, 255)">
+        <circle cx="30" cy="30" r="26" fill="#F5F5F4" stroke="#E7E5E4" stroke-width="2"/>
+        <path d="M22 28 L38 28 L38 38 L22 38 Z" fill="#78716C"/>
+        <path d="M25 28 A5 5 0 0 1 35 28" fill="none" stroke="#78716C" stroke-width="2.5"/>
+        <text x="75" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="800" fill="#1C1917">100% Offline &amp; Secure</text>
+        <text x="75" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#57534E">Your data stays safe on device</text>
+      </g>
+    </g>
+
+    <!-- Green Brush Banner -->
+    <g transform="translate(60, 850)">
+      <rect width="250" height="60" rx="16" fill="#166534"/>
+      <text x="30" y="38" font-family="'Brush Script MT', 'Segoe Script', cursive, sans-serif" font-size="24" fill="#FFFFFF">
+        ⚡ Save Money. Live Smarter.
+      </text>
+    </g>
+
+    <!-- SMARTPHONE MOCKUP (Right Side) -->
+    <g transform="translate(420, 130)" filter="url(#cardShadow)">
+      <!-- Bezel -->
+      <rect width="340" height="740" rx="44" fill="#1C1917" stroke="#44403C" stroke-width="4"/>
+      <!-- Screen -->
+      <rect x="8" y="8" width="324" height="724" rx="36" fill="#FDFBF7"/>
+
+      <!-- Top Speaker & Camera punchhole -->
+      <circle cx="170" cy="24" r="4.5" fill="#000000"/>
+      <!-- Status bar -->
+      <text x="30" y="28" font-family="sans-serif" font-size="11" font-weight="700" fill="#44403C">9:44</text>
+      <text x="300" y="28" text-anchor="end" font-family="sans-serif" font-size="11" font-weight="700" fill="#44403C">17% 🔋</text>
+
+      <!-- App Header inside screen -->
+      <g transform="translate(24, 55)">
+        <rect width="36" height="36" rx="10" fill="#F5F5F4" stroke="#E7E5E4" stroke-width="1.5"/>
+        <rect x="8" y="12" width="20" height="12" rx="3" fill="#57534E"/>
+        <text x="46" y="16" font-family="sans-serif" font-size="12" font-weight="800" fill="#1C1917">Auto Expense Tracker</text>
+        <text x="46" y="30" font-family="sans-serif" font-size="10" font-weight="600" fill="#16A34A">100% Offline &amp; Private</text>
+      </g>
+
+      <!-- Card 1: NET DIFFERENCE (BDT) -->
+      <g transform="translate(24, 110)">
+        <rect width="276" height="135" rx="18" fill="#57534E"/>
+        <text x="18" y="28" font-family="sans-serif" font-size="10" font-weight="700" fill="#D6D3CD" letter-spacing="1">NET DIFFERENCE (BDT)</text>
+        <rect x="210" y="14" width="46" height="20" rx="6" fill="#44403C"/>
+        <text x="233" y="28" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="800" fill="#FDFBF7">BDT</text>
+        
+        <text x="18" y="65" font-family="sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">-৳ 3,112.00</text>
+        
+        <line x1="18" y1="82" x2="258" y2="82" stroke="#78716C" stroke-width="1"/>
+        <text x="18" y="102" font-family="sans-serif" font-size="9" font-weight="600" fill="#D6D3CD">TOTAL EARNING</text>
+        <text x="18" y="120" font-family="sans-serif" font-size="12" font-weight="800" fill="#86EFAC">৳ 45,750.00</text>
+        
+        <text x="150" y="102" font-family="sans-serif" font-size="9" font-weight="600" fill="#D6D3CD">TOTAL EXPENSES</text>
+        <text x="150" y="120" font-family="sans-serif" font-size="12" font-weight="800" fill="#FCA5A5">৳ 48,862.00</text>
+      </g>
+
+      <!-- Card 2: NET DIFFERENCE (USD) -->
+      <g transform="translate(24, 260)">
+        <rect width="276" height="135" rx="18" fill="#78716C"/>
+        <text x="18" y="28" font-family="sans-serif" font-size="10" font-weight="700" fill="#E7E5E4" letter-spacing="1">NET DIFFERENCE (USD)</text>
+        <rect x="210" y="14" width="46" height="20" rx="6" fill="#57534E"/>
+        <text x="233" y="28" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="800" fill="#FDFBF7">USD</text>
+        
+        <text x="18" y="65" font-family="sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">-$ 470.84</text>
+        
+        <line x1="18" y1="82" x2="258" y2="82" stroke="#A8A29E" stroke-width="1"/>
+        <text x="18" y="102" font-family="sans-serif" font-size="9" font-weight="600" fill="#E7E5E4">TOTAL EARNING</text>
+        <text x="18" y="120" font-family="sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">$ 0.00</text>
+        
+        <text x="150" y="102" font-family="sans-serif" font-size="9" font-weight="600" fill="#E7E5E4">TOTAL EXPENSES</text>
+        <text x="150" y="120" font-family="sans-serif" font-size="12" font-weight="800" fill="#FCA5A5">$ 470.84</text>
+      </g>
+
+      <!-- Active Monitoring Pill -->
+      <g transform="translate(24, 415)">
+        <rect width="276" height="42" rx="14" fill="#DCFCE7"/>
+        <circle cx="24" cy="21" r="5" fill="#16A34A"/>
+        <text x="38" y="25" font-family="sans-serif" font-size="11" font-weight="800" fill="#14532D">Monitoring Active</text>
+        <rect x="175" y="10" width="90" height="22" rx="8" fill="#16A34A"/>
+        <text x="220" y="25" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="800" fill="#FFFFFF">OFFLINE SECURED</text>
+      </g>
+
+      <!-- Wallets Section: Bkash -->
+      <g transform="translate(24, 480)">
+        <text x="0" y="0" font-family="sans-serif" font-size="11" font-weight="700" fill="#78716C">MY WALLETS &amp; ACCOUNTS</text>
+        <rect y="12" width="276" height="60" rx="14" fill="#FFFFFF" stroke="#E7E5E4" stroke-width="1.5"/>
+        <text x="16" y="38" font-family="sans-serif" font-size="14" font-weight="800" fill="#1C1917">Bkash</text>
+        <text x="16" y="56" font-family="sans-serif" font-size="10" font-weight="600" fill="#78716C">Current Balance: ৳ 95.00</text>
+      </g>
+
+      <!-- Bottom Nav Bar -->
+      <g transform="translate(24, 650)">
+        <text x="25" y="15" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="800" fill="#15803D">HOME</text>
+        <text x="85" y="15" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#78716C">HISTORY</text>
+        <text x="145" y="15" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#78716C">MORE</text>
+        <text x="200" y="15" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#78716C">ALARMS</text>
+        <text x="255" y="15" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#78716C">SETTINGS</text>
+      </g>
+    </g>
+
+    <!-- Bottom Strip -->
+    <g transform="translate(60, 1100)">
+      <line x1="0" y1="0" x2="680" y2="0" stroke="#D6D3CD" stroke-width="1.5"/>
+      <g transform="translate(20, 45)">
+        <text x="0" y="0" font-family="sans-serif" font-size="15" font-weight="800" fill="#1C1917">⚡ Works Offline</text>
+        <text x="170" y="0" font-family="sans-serif" font-size="15" font-weight="800" fill="#1C1917">🛡 Secure &amp; Private</text>
+        <text x="360" y="0" font-family="sans-serif" font-size="15" font-weight="800" fill="#1C1917">🔔 Auto Tracking</text>
+        <text x="530" y="0" font-family="sans-serif" font-size="15" font-weight="800" fill="#1C1917">📊 All Transactions</text>
+      </g>
+    </g>
+  </svg>
+  

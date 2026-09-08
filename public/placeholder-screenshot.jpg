@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 680" width="380" height="680" fill="none">
+  <defs>
+    <linearGradient id="genBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050a17"/>
+      <stop offset="50%" stop-color="#0a1428"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f5d4"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="360" height="660" rx="36" fill="#0c1322" stroke="#1e293b" stroke-width="4"/>
+  <rect x="18" y="18" width="344" height="644" rx="30" fill="url(#genBg)"/>
+  <rect x="130" y="28" width="120" height="24" rx="12" fill="#000000"/>
+  <text x="190" y="260" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="22" fill="#ffffff">WakeUp AI Studio</text>
+  <text x="190" y="290" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#00f5d4">MOBILE APP SHOWCASE</text>
+  <circle cx="190" cy="380" r="60" stroke="url(#cyanLine)" stroke-width="4" fill="none"/>
+  <text x="190" y="388" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="28" fill="#ffffff">AI</text>
+  <text x="190" y="520" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" fill="#94a3b8">Play Store Verified App</text>
+</svg>
