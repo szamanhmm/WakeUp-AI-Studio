@@ -14,7 +14,7 @@ export const clientLogos: ClientItem[] = [
   { name: 'Bling (MidyaTech IT)', src: '/images/client-bling.png', website: 'https://bling-iq.com/' },
   { name: '(Blackbook) BBK', src: '/images/client-bbk.png', website: 'https://bbk.me' },
   { name: 'Outlast', src: '/images/client-outlast.png', website: 'https://getoutlast.com/' },
-  { name: 'Closetfestive', src: '/images/client-closetfestive.jpg', website: 'https://www.facebook.com/Closetfestive' },
+  { name: 'Closetfestive', src: '/images/client-closetfestive.jpg', website: '#' },
   { name: 'Junfrau Labs', src: '/images/client-junfrau.png', website: 'https://www.wizkid.app/' },
   { name: 'Payfran', src: '/images/client-payfran.png', website: 'https://www.payfran.com/' },
   { name: 'Advise', src: '/images/client-advise.png', website: 'https://advisemycampus.com/' },
