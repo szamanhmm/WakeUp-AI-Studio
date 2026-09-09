@@ -21,12 +21,10 @@ export default function App() {
         {/* Phase 1: Base Setup & Cyber-Ocean Hero Section */}
         <Hero />
 
-        {/* Phase 2: About & Services Sections */}
+        {/* Phase 2: About & In-House Apps Showcase */}
         <About />
-        <Services />
-
-        {/* WakeUp AI In-House App Showcase (Play Store Integration) */}
         <Products />
+        <Services />
 
         {/* Clients and Project Section with Infinite Auto Swiping */}
         <ClientsSection />

@@ -121,13 +121,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#services" className="hover:text-cyan-300 transition-colors">
-                  Our Services
+                <a href="#in-house-apps" className="hover:text-cyan-300 transition-colors">
+                  In-House Apps
                 </a>
               </li>
               <li>
-                <a href="#in-house-apps" className="hover:text-cyan-300 transition-colors">
-                  In-House Apps
+                <a href="#services" className="hover:text-cyan-300 transition-colors">
+                  Our Services
                 </a>
               </li>
               <li>
