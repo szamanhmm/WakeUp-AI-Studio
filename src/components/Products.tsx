@@ -7,7 +7,6 @@ interface ProductItem {
   description: string;
   category: string;
   rating: string;
-  reviews: string;
   downloads: string;
   mockupSrc: string;
   accentGradient: string;
@@ -23,8 +22,7 @@ const PRODUCTS: ProductItem[] = [
     description:
       'Smart alarm app designed to make sure you actually wake up. Choose challenges like QR verification, walking, AI detection, and math. Works offline with privacy focused, on device processing. Wake up smarter, stay active, and start your day right.',
     category: 'PRODUCTIVITY & SMART ALARM',
-    rating: '4.9',
-    reviews: '2.8K reviews',
+    rating: '5 Stars',
     downloads: '50K+ Downloads',
     mockupSrc: '/images/app-wakeup-ai.png',
     accentGradient: 'from-lime-400 via-emerald-400 to-cyan-400',
@@ -43,8 +41,7 @@ const PRODUCTS: ProductItem[] = [
     description:
       'Automatically tracks your income and expenses through notifications. Supports multiple currencies and smart financial categorization. 100% offline and private, with all data stored securely on your device. Track your spending effortlessly and build better money habits.',
     category: 'FINANCE & WEALTH',
-    rating: '4.9',
-    reviews: '1.9K reviews',
+    rating: '5 Stars',
     downloads: '25K+ Downloads',
     mockupSrc: '/images/app-expense-tracker.png',
     accentGradient: 'from-emerald-400 via-teal-400 to-amber-300',
@@ -63,8 +60,7 @@ const PRODUCTS: ProductItem[] = [
     description:
       'Turn important notifications into loud, persistent alarms you cannot easily miss. Create custom rules based on apps, titles, people, or message content. Override Silent and Do Not Disturb modes for critical alerts. Stay focused with offline privacy, smart insights, quiet hours, and no subscriptions.',
     category: 'SMART ALERTS & UTILITIES',
-    rating: '4.8',
-    reviews: '1.5K reviews',
+    rating: '5 Stars',
     downloads: '15K+ Downloads',
     mockupSrc: '/images/app-alertzen.png',
     accentGradient: 'from-sky-400 via-indigo-500 to-purple-500',
@@ -131,7 +127,6 @@ export default function Products() {
                   <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-900/90 border border-slate-800 text-xs font-mono text-amber-300">
                     <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
                     <span>{app.rating}</span>
-                    <span className="text-slate-500 text-[10px]">({app.reviews})</span>
                   </div>
                 </div>
 
