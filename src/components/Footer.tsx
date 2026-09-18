@@ -26,6 +26,9 @@ export default function Footer() {
               <img
                 src="/wakeup-ai-logo.svg"
                 alt="WakeUp AI Logo"
+                width="144"
+                height="36"
+                loading="lazy"
                 className="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </a>

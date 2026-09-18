@@ -98,9 +98,9 @@ const SERVICES: ServiceItem[] = [
   {
     id: 'svc-publishing',
     icon: Rocket,
-    title: 'App Publishing Assistance',
+    title: 'App Publishing & Play Store 12-Tester Testing',
     description:
-      'End-to-end support getting your app live on the Google Play Store and Apple App Store — listings, compliance, and submission handled for you.',
+      'End-to-end rollout support — full compliance with Google Play 12-tester / 20-tester closed testing rules, app publishing, listings, and production rollout.',
     category: 'STORE ROLLOUT',
     glowColor: 'hover:border-cyan-400/50 hover:shadow-[0_0_25px_rgba(0,245,212,0.25)]',
   },

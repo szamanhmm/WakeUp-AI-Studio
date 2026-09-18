@@ -48,6 +48,9 @@ export default function Header() {
               <img
                 src="/wakeup-ai-logo.svg"
                 alt="WakeUp AI Logo"
+                width="144"
+                height="36"
+                fetchPriority="high"
                 className="h-8 sm:h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_12px_rgba(0,245,212,0.4)]"
               />
             </div>

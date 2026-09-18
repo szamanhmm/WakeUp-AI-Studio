@@ -83,6 +83,9 @@ export default function ClientsSection() {
                 <img
                   src={client.src}
                   alt={client.name}
+                  width="160"
+                  height="64"
+                  loading="lazy"
                   className="max-h-14 sm:max-h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-80 hover:opacity-100"
                 />
               </a>
@@ -106,6 +109,9 @@ export default function ClientsSection() {
                 <img
                   src={client.src}
                   alt={client.name}
+                  width="160"
+                  height="64"
+                  loading="lazy"
                   className="max-h-14 sm:max-h-16 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300 opacity-80 hover:opacity-100"
                 />
               </a>

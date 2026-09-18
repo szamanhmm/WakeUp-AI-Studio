@@ -4,31 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WakeUp AI — Transforming Ideas into Intelligent Mobile Apps</title>
-    <meta name="description" content="WakeUp AI designs and builds Android, iOS, and SaaS products. Turning early-stage ideas into applications that think, adapt, and scale." />
-    <meta name="keywords" content="AI app development, mobile app development, machine learning, iOS development, Android development, SaaS development, AI integration" />
+    <meta name="description" content="WakeUp AI specializes in mobile app development, Google Play 12-tester requirement & closed testing services, app publishing assistance, and AI-powered Android/iOS solutions." />
+    <meta name="keywords" content="AI app development, mobile app development, Google Play 12 tester requirement, Google Play closed testing 20 testers, app publishing assistance, Android development, iOS development, SaaS development, AI integration" />
     <meta name="author" content="WakeUp AI" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#030712" />
-    <link rel="canonical" href="https://wakeupai.com/" />
+    <link rel="canonical" href="https://wakeupai-mauve.vercel.app/" />
     <link rel="icon" type="image/svg+xml" href="/wakeup-ai-logo.svg" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="WakeUp AI — Transforming Ideas into Intelligent Mobile Apps" />
-    <meta property="og:description" content="WakeUp AI designs and builds Android, iOS, and SaaS products. Turning early-stage ideas into applications that think, adapt, and scale." />
-    <meta property="og:url" content="https://wakeupai.com/" />
+    <meta property="og:description" content="WakeUp AI specializes in mobile app development, Google Play 12-tester requirement & closed testing services, app publishing assistance, and AI-powered Android/iOS solutions." />
+    <meta property="og:url" content="https://wakeupai-mauve.vercel.app/" />
     <meta property="og:site_name" content="WakeUp AI" />
-    <meta property="og:image" content="https://wakeupai.com/og-image.jpg" />
+    <meta property="og:image" content="https://wakeupai-mauve.vercel.app/placeholder-screenshot.jpg" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="WakeUp AI — Transforming Ideas into Intelligent Mobile Apps" />
-    <meta name="twitter:description" content="WakeUp AI designs and builds Android, iOS, and SaaS products. Turning early-stage ideas into applications that think, adapt, and scale." />
+    <meta name="twitter:description" content="WakeUp AI specializes in mobile app development, Google Play 12-tester requirement & closed testing services, app publishing assistance, and AI-powered Android/iOS solutions." />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Speculation Rules API for Performance Pre-rendering & Prefetching -->
+    <script type="speculationrules">
+    {
+      "prefetch": [
+        {
+          "source": "document",
+          "where": {
+            "and": [
+              { "href_matches": "/*" }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
@@ -36,10 +52,58 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "WakeUp AI",
-      "url": "https://wakeupai.com",
+      "url": "https://wakeupai-mauve.vercel.app",
       "email": "wakeup.ai.dev@gmail.com",
-      "description": "WakeUp AI designs and builds Android, iOS, and SaaS products. Turning early-stage ideas into applications that think, adapt, and scale.",
+      "description": "WakeUp AI specializes in mobile app development, Google Play 12-tester requirement & closed testing services, app publishing assistance, and AI-powered Android/iOS solutions.",
       "sameAs": ["https://www.linkedin.com/showcase/wakeup-ai","https://c4utech.com"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "WakeUp AI In-House Mobile Apps",
+      "itemListElement": [
+        {
+          "@type": "SoftwareApplication",
+          "position": 1,
+          "name": "Alarm Clock - WakeUp AI",
+          "operatingSystem": "Android",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://play.google.com/store/apps/developer?id=WakeUp+AI",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "ratingCount": "2800"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 2,
+          "name": "Auto Expense Tracker",
+          "operatingSystem": "Android",
+          "applicationCategory": "FinanceApplication",
+          "url": "https://play.google.com/store/apps/developer?id=WakeUp+AI",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "ratingCount": "1900"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 3,
+          "name": "AlertZen Notification Alarm",
+          "operatingSystem": "Android",
+          "applicationCategory": "UtilitiesApplication",
+          "url": "https://play.google.com/store/apps/developer?id=WakeUp+AI",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "ratingCount": "1500"
+          }
+        }
+      ]
     }
     </script>
     <script type="application/ld+json">
@@ -54,6 +118,11 @@
         },
         {
           "@type": "Question",
+          "name": "Do you help with Google Play's 12/20-tester closed testing requirement for app publishing?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Google Play requires new personal developer accounts to run closed testing with 14-20 opted-in testers for 14 continuous days before production access is granted. We handle full closed testing management, real opt-in testers, feedback tracking, app publishing, and store compliance."}
+        },
+        {
+          "@type": "Question",
           "name": "Do you build for both iOS and Android?",
           "acceptedAnswer": {"@type": "Answer", "text": "Yes. We build natively for both platforms, or use a shared codebase where it fits the product, and can launch on one platform first if that suits your rollout plan."}
         },
@@ -65,12 +134,12 @@
         {
           "@type": "Question",
           "name": "What happens after the app launches?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Every plan includes a post-launch support window, and we offer ongoing maintenance retainers plus app store publishing and QA testing services after that period ends."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Every plan includes a post-launch support window, and we offer ongoing maintenance retainers plus app store publishing, Google Play 12-tester closed testing, and QA services after that period ends."}
         },
         {
           "@type": "Question",
           "name": "How is pricing determined?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Pricing depends on platform count, feature complexity, and whether custom AI/ML models are involved. Every project is scoped during a free consultation before quoting a fixed number."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Pricing depends on platform count, feature complexity, and whether custom AI/ML models or closed testing management are involved. Every project is scoped during a free consultation before quoting a fixed number."}
         },
         {
           "@type": "Question",

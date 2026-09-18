@@ -136,6 +136,9 @@ export default function Products() {
                   <img
                     src={app.mockupSrc}
                     alt={`${app.title} Poster & Mockup`}
+                    width="340"
+                    height="490"
+                    loading="lazy"
                     className="app-mockup w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
                   />
 
@@ -143,6 +146,9 @@ export default function Products() {
                   <img
                     src="placeholder-screenshot.jpg"
                     alt={`${app.title} Preview Frame`}
+                    width="340"
+                    height="490"
+                    loading="lazy"
                     className="app-mockup sr-only pointer-events-none"
                     aria-hidden="true"
                   />

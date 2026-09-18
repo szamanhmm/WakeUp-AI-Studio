@@ -15,6 +15,12 @@ const FAQS: FAQItem[] = [
       'Most MVPs take 8–12 weeks depending on scope. AI-integrated or multi-platform builds typically run 12–20 weeks, with working staging builds delivered throughout.',
   },
   {
+    id: 'faq-1b',
+    question: "Do you help with Google Play's 12/20-tester closed testing requirement for app publishing?",
+    answer:
+      'Yes. Google Play requires new personal developer accounts to run closed testing with 14-20 opted-in testers for 14 continuous days before production access is granted. We handle full closed testing management, real opt-in testers, feedback tracking, app publishing, and store compliance.',
+  },
+  {
     id: 'faq-2',
     question: 'Do you build for both iOS and Android?',
     answer:
