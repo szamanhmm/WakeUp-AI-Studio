@@ -30,7 +30,7 @@ const FAQS: FAQItem[] = [
     id: 'faq-3',
     question: 'Can you integrate AI into an existing app?',
     answer:
-      'Yes. We regularly add AI features — recommendations, chat, search, automation — into apps that already have real users, with minimal disruption to your existing stack.',
+      'Yes. We regularly add AI features (recommendations, chat, search, automation) into apps that already have real users, with minimal disruption to your existing stack.',
   },
   {
     id: 'faq-4',

@@ -232,7 +232,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="text-sm sm:text-base font-semibold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1.5 transition-colors"
                   >
-                    <span>C4U TECH — c4utech.com</span>
+                    <span>C4U TECH (c4utech.com)</span>
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -253,7 +253,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="text-sm sm:text-base font-semibold text-white hover:text-cyan-300 inline-flex items-center gap-1.5 transition-colors"
                   >
-                    <span>Saifuz Zaman — Upwork Profile</span>
+                    <span>Saifuz Zaman (Upwork Profile)</span>
                     <ExternalLink className="w-3.5 h-3.5 text-cyan-400" />
                   </a>
                 </div>
@@ -465,7 +465,7 @@ export default function Contact() {
                         Transmission Successful!
                       </strong>
                       <span>
-                        Thanks — your project details have been sent to{' '}
+                        Thanks! Your project details have been sent to{' '}
                         <code className="text-cyan-300 font-mono">wakeup.ai.dev@gmail.com</code>. We will review your scope and respond within one business day.
                       </span>
                     </div>

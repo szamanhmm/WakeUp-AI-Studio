@@ -13,7 +13,7 @@ export default function About() {
       icon: Cog,
       title: 'Automation-first engineering',
       description:
-        'Wherever a manual process can be modeled, we automate it — from onboarding flows to backend operations.',
+        'Wherever a manual process can be modeled, we automate it: from onboarding flows to backend operations.',
       tag: 'SYS.AUTO',
     },
     {
@@ -173,7 +173,7 @@ export default function About() {
 
             {/* Lead Narrative */}
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-10">
-              WakeUp AI is a mobile app and AI solutions company that plans, designs, and engineers products end to end. We treat intelligence as infrastructure — every app we build is designed to automate the repetitive, personalize the experience, and get smarter the more people use it.
+              WakeUp AI is a mobile app and AI solutions company that plans, designs, and engineers products end to end. We treat intelligence as infrastructure: every app we build is designed to automate the repetitive, personalize the experience, and get smarter the more people use it.
             </p>
 
             {/* 4 Pillars List */}

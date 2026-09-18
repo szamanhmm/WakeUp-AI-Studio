@@ -37,7 +37,7 @@ const SERVICES: ServiceItem[] = [
     icon: Apple,
     title: 'iOS App Development',
     description:
-      "Swift-based apps that feel native to iOS — fast, polished, and built to Apple's App Store standards.",
+      "Swift-based apps that feel native to iOS: fast, polished, and built to Apple's App Store standards.",
     category: 'APPLE ECOSYSTEM',
     glowColor: 'hover:border-blue-400/50 hover:shadow-[0_0_25px_rgba(56,189,248,0.2)]',
   },
@@ -55,7 +55,7 @@ const SERVICES: ServiceItem[] = [
     icon: Network,
     title: 'Machine Learning Solutions',
     description:
-      'Custom models trained on your data — from predictive analytics to intelligent automation pipelines.',
+      'Custom models trained on your data: from predictive analytics to intelligent automation pipelines.',
     category: 'NEURAL NETWORKS',
     glowColor: 'hover:border-indigo-400/50 hover:shadow-[0_0_25px_rgba(108,92,231,0.2)]',
   },
@@ -64,7 +64,7 @@ const SERVICES: ServiceItem[] = [
     icon: Layout,
     title: 'UI/UX Design',
     description:
-      'Interface design grounded in user research, motion, and accessibility — not just visual polish.',
+      'Interface design grounded in user research, motion, and accessibility, not just visual polish.',
     category: 'DESIGN SYSTEM',
     glowColor: 'hover:border-pink-400/50 hover:shadow-[0_0_25px_rgba(244,114,182,0.2)]',
   },
@@ -100,7 +100,7 @@ const SERVICES: ServiceItem[] = [
     icon: Rocket,
     title: 'App Publishing & Play Store 12-Tester Testing',
     description:
-      'End-to-end rollout support — full compliance with Google Play 12-tester / 20-tester closed testing rules, app publishing, listings, and production rollout.',
+      'End-to-end rollout support: full compliance with Google Play 12-tester / 20-tester closed testing rules, app publishing, listings, and production rollout.',
     category: 'STORE ROLLOUT',
     glowColor: 'hover:border-cyan-400/50 hover:shadow-[0_0_25px_rgba(0,245,212,0.25)]',
   },
