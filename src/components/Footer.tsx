@@ -223,18 +223,36 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#portfolio" className="hover:text-cyan-300 transition-colors">
-                  Alarm Clock - WakeUp AI
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.wakeupaiapp.alarmclock"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-cyan-300 inline-flex items-center gap-1 transition-colors"
+                >
+                  <span>Alarm Clock - WakeUp AI</span>
+                  <ExternalLink className="w-2.5 h-2.5 text-slate-500" />
                 </a>
               </li>
               <li>
-                <a href="#portfolio" className="hover:text-cyan-300 transition-colors">
-                  Auto Expense Tracker
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.expensetracker.wakeupai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-cyan-300 inline-flex items-center gap-1 transition-colors"
+                >
+                  <span>Auto Expense Tracker</span>
+                  <ExternalLink className="w-2.5 h-2.5 text-slate-500" />
                 </a>
               </li>
               <li>
-                <a href="#portfolio" className="hover:text-cyan-300 transition-colors">
-                  AlertZen Notification Alarm
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.alertzennotification.wakeupai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-cyan-300 inline-flex items-center gap-1 transition-colors"
+                >
+                  <span>AlertZen Notification Alarm</span>
+                  <ExternalLink className="w-2.5 h-2.5 text-slate-500" />
                 </a>
               </li>
               <li className="pt-2 border-t border-slate-800/80">

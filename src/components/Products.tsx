@@ -9,6 +9,7 @@ interface ProductItem {
   rating: string;
   downloads: string;
   mockupSrc: string;
+  playStoreUrl: string;
   accentGradient: string;
   glowClass: string;
   tags: string[];
@@ -25,6 +26,7 @@ const PRODUCTS: ProductItem[] = [
     rating: '5 Stars',
     downloads: '50K+ Downloads',
     mockupSrc: '/images/app-wakeup-ai.png',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.wakeupaiapp.alarmclock',
     accentGradient: 'from-lime-400 via-emerald-400 to-cyan-400',
     glowClass: 'hover:border-lime-400/60 hover:shadow-[0_0_35px_rgba(163,230,53,0.25)]',
     tags: [
@@ -44,6 +46,7 @@ const PRODUCTS: ProductItem[] = [
     rating: '5 Stars',
     downloads: '25K+ Downloads',
     mockupSrc: '/images/app-expense-tracker.png',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.expensetracker.wakeupai',
     accentGradient: 'from-emerald-400 via-teal-400 to-amber-300',
     glowClass: 'hover:border-emerald-400/60 hover:shadow-[0_0_35px_rgba(16,185,129,0.25)]',
     tags: [
@@ -63,6 +66,7 @@ const PRODUCTS: ProductItem[] = [
     rating: '5 Stars',
     downloads: '15K+ Downloads',
     mockupSrc: '/images/app-alertzen.png',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.alertzennotification.wakeupai',
     accentGradient: 'from-sky-400 via-indigo-500 to-purple-500',
     glowClass: 'hover:border-sky-400/60 hover:shadow-[0_0_35px_rgba(56,189,248,0.25)]',
     tags: [
@@ -191,7 +195,7 @@ export default function Products() {
               {/* Bottom Card Area: Distinct "Get it on Google Play" Button */}
               <div className="pt-4 border-t border-slate-800/80">
                 <a
-                  href={PLAY_STORE_URL}
+                  href={app.playStoreUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   id={`btn-playstore-${app.id}`}
