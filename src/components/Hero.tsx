@@ -188,7 +188,7 @@ export default function Hero() {
               {/* Tag 2: iOS · Android */}
               <div
                 id="hero-tag-mobile"
-                className="absolute -bottom-3 -right-2 sm:bottom-4 sm:-right-4 px-3.5 py-2 rounded-xl cyber-glass border-cyan-500/40 flex items-center gap-2 text-xs font-mono font-medium text-cyan-200 shadow-[0_4px_20px_rgba(0,0,0,0.5)] animate-bounce [animation-duration:6s] [animation-delay:1s]"
+                className="absolute -bottom-3 -left-4 sm:bottom-2 sm:-left-4 px-3.5 py-2 rounded-xl cyber-glass border-cyan-500/40 flex items-center gap-2 text-xs font-mono font-medium text-cyan-200 shadow-[0_4px_20px_rgba(0,0,0,0.5)] animate-bounce [animation-duration:6s] [animation-delay:1s]"
               >
                 <div className="p-1.5 rounded-lg bg-cyan-500/20 text-cyan-300">
                   <Smartphone className="w-3.5 h-3.5" />
