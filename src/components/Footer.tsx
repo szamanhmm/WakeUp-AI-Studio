@@ -301,18 +301,36 @@ export default function Footer() {
             </span>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-4 text-slate-400">
             <span className="inline-flex items-center gap-1.5 text-cyan-400/80">
               <Shield className="w-3.5 h-3.5" />
               <span>SSL 256-BIT SECURE</span>
             </span>
+
+            <span className="text-slate-700 hidden sm:inline">•</span>
+
+            <a
+              href="/privacy-policy"
+              className="hover:text-cyan-300 transition-colors"
+            >
+              Privacy Policy
+            </a>
+
+            <span className="text-slate-700">•</span>
+
+            <a
+              href="/terms"
+              className="hover:text-cyan-300 transition-colors"
+            >
+              Terms of Service
+            </a>
 
             {/* Back to top button */}
             <button
               type="button"
               onClick={scrollToTop}
               aria-label="Back to top"
-              className="p-2 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyan-400 text-slate-300 hover:text-cyan-300 transition-all hover:shadow-[0_0_15px_rgba(0,245,212,0.3)] hover:-translate-y-0.5"
+              className="p-2 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyan-400 text-slate-300 hover:text-cyan-300 transition-all hover:shadow-[0_0_15px_rgba(0,245,212,0.3)] hover:-translate-y-0.5 ml-2"
             >
               <ArrowUp className="w-4 h-4" />
             </button>

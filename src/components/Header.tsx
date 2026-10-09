@@ -27,6 +27,8 @@ export default function Header() {
 
   const closeMenu = () => setMobileMenuOpen(false);
 
+  const isHome = window.location.pathname === '/' || window.location.pathname === '';
+
   return (
     <header
       id="site-header"
@@ -40,7 +42,7 @@ export default function Header() {
         <nav className="flex items-center justify-between" aria-label="Main Navigation">
           {/* Logo with explicit <img> tag and alt="WakeUp AI Logo" */}
           <a
-            href="#top"
+            href={isHome ? '#top' : '/'}
             id="header-logo-link"
             className="group flex items-center gap-3 relative focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-lg p-1"
           >
@@ -61,7 +63,7 @@ export default function Header() {
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.label}
-                href={item.href}
+                href={isHome ? item.href : `/${item.href}`}
                 className="text-sm font-medium text-slate-300 hover:text-cyan-300 transition-colors duration-200 relative group py-1"
               >
                 {item.label}
@@ -80,7 +82,7 @@ export default function Header() {
 
             {/* Get Started Button */}
             <a
-              href="#contact"
+              href={isHome ? '#contact' : '/#contact'}
               id="header-cta-btn"
               className="relative group overflow-hidden px-5 py-2.5 rounded-full text-sm font-semibold text-[#030712] transition-all duration-300 hover:shadow-[0_0_25px_rgba(0,245,212,0.55)] hover:-translate-y-0.5"
             >
