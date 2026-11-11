@@ -234,8 +234,7 @@ export default function VideoCameraTermsPage() {
             <p className="text-slate-300 mb-4">
               These Terms are governed by the laws of <strong className="text-white">Bangladesh</strong>, except where
               mandatory local consumer laws apply. Revised Terms take effect when posted at the official Terms URL with
-              an updated Effective Date. Contact <strong className="text-white">C4U TECH · WakeUp AI</strong> (7th
-              Floor, House-262/263, Road No 1, Block B, Bashundhara R/A, Dhaka 1229, Bangladesh):
+              an updated Effective Date. Contact <strong className="text-white">C4U TECH · WakeUp AI</strong>:
             </p>
 
             <div className="flex flex-col gap-2 text-sm mb-6">

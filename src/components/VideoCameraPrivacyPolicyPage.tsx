@@ -209,8 +209,7 @@ export default function VideoCameraPrivacyPolicyPage() {
             <p className="text-slate-300 mb-4">
               You are responsible for obeying applicable video and audio recording consent laws. For privacy questions,
               data deletion requests, or legal inquiries, contact{' '}
-              <strong className="text-white">C4U TECH · WakeUp AI</strong> (7th Floor, House-262/263, Road No 1, Block B,
-              Bashundhara R/A, Dhaka 1229, Bangladesh):
+              <strong className="text-white">C4U TECH · WakeUp AI</strong>:
             </p>
 
             <div className="flex flex-col gap-2 text-sm mb-6">
