@@ -10,7 +10,7 @@ import {
 
 const PAGE_TITLE = 'Privacy Policy: Manual Video Camera | C4U TECH · WakeUp AI';
 const PAGE_DESCRIPTION =
-  'Complete Privacy Policy and Google Play Data Safety disclosure for Manual Video Camera (com.wakeupai.videocamera.timestamp.videorecorder.camerapro) by C4U TECH · WakeUp AI.';
+  'Complete Privacy Policy and Google Play Data Safety disclosure for Manual Video Camera by C4U TECH · WakeUp AI.';
 const PAGE_CANONICAL = 'https://www.c4utech.com/videocamera/privacy-policy';
 
 export default function VideoCameraPrivacyPolicyPage() {
@@ -113,20 +113,12 @@ export default function VideoCameraPrivacyPolicyPage() {
         {/* App Metadata Summary Grid */}
         <div className="vc-surface-card p-5 sm:p-6 rounded-2xl cyber-glass border border-slate-800/90 bg-slate-950/70 shadow-[0_10px_30px_rgba(0,0,0,0.5)] mb-6">
           <dl className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-            <div>
+            <div className="lg:col-span-2">
               <dt className="text-[11px] font-mono font-semibold uppercase tracking-wider text-slate-400 mb-1">
                 App Name &amp; Play Listing
               </dt>
               <dd className="text-sm text-white break-words">
                 Manual Video Camera (Google Play: <em className="text-cyan-200 not-italic font-medium">Timestamp Manual Video Camera</em>)
-              </dd>
-            </div>
-            <div>
-              <dt className="text-[11px] font-mono font-semibold uppercase tracking-wider text-slate-400 mb-1">
-                Android Package ID
-              </dt>
-              <dd className="text-sm text-white">
-                <code className="vc-code">com.wakeupai.videocamera.timestamp.videorecorder.camerapro</code>
               </dd>
             </div>
             <div>
@@ -176,10 +168,15 @@ export default function VideoCameraPrivacyPolicyPage() {
             </div>
             <div>
               <dt className="text-[11px] font-mono font-semibold uppercase tracking-wider text-slate-400 mb-1">
-                Official Policy URL
+                Official Privacy Policy
               </dt>
               <dd className="text-sm text-white">
-                <code className="vc-code">https://www.c4utech.com/videocamera/privacy-policy</code>
+                <a
+                  href="https://www.c4utech.com/videocamera/privacy-policy"
+                  className="text-cyan-400 hover:text-cyan-300 underline underline-offset-4"
+                >
+                  Manual Video Camera Privacy Policy
+                </a>
               </dd>
             </div>
           </dl>
@@ -271,8 +268,7 @@ export default function VideoCameraPrivacyPolicyPage() {
             </h2>
             <p className="text-slate-300 mb-3">
               <strong className="text-white">Manual Video Camera</strong> (listed on Google Play as{' '}
-              <em className="text-cyan-200">Timestamp Manual Video Camera</em>, package{' '}
-              <code className="vc-code">com.wakeupai.videocamera.timestamp.videorecorder.camerapro</code>) is developed
+              <em className="text-cyan-200">Timestamp Manual Video Camera</em>) is developed
               and published by <strong className="text-white">C4U TECH · WakeUp AI</strong> (&ldquo;C4U Tech&rdquo;,
               &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;). This Privacy Policy explains how information is
               processed on your Android device and by integrated Google SDKs when you install or use the application.
@@ -1260,21 +1256,21 @@ export default function VideoCameraPrivacyPolicyPage() {
                 Bashundhara R/A, Dhaka 1229, Bangladesh
               </li>
               <li>
-                <strong className="text-white">Official Privacy Policy URL:</strong>{' '}
+                <strong className="text-white">Official Privacy Policy:</strong>{' '}
                 <a
                   href="https://www.c4utech.com/videocamera/privacy-policy"
-                  className="text-cyan-400 hover:text-cyan-300 underline underline-offset-4 break-all"
+                  className="text-cyan-400 hover:text-cyan-300 underline underline-offset-4"
                 >
-                  https://www.c4utech.com/videocamera/privacy-policy
+                  Manual Video Camera Privacy Policy
                 </a>
               </li>
               <li>
-                <strong className="text-white">Official Terms of Use URL:</strong>{' '}
+                <strong className="text-white">Official Terms of Use:</strong>{' '}
                 <a
                   href="https://www.c4utech.com/videocamera/terms"
-                  className="text-cyan-400 hover:text-cyan-300 underline underline-offset-4 break-all"
+                  className="text-cyan-400 hover:text-cyan-300 underline underline-offset-4"
                 >
-                  https://www.c4utech.com/videocamera/terms
+                  Manual Video Camera Terms of Use
                 </a>
               </li>
             </ul>
