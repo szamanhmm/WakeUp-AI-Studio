@@ -138,7 +138,7 @@
   animation-play-state: paused;
 }
 
-/* Video Camera Privacy Policy Accessibility & Print Support */
+/* Video Camera Legal Pages Accessibility & Print Support */
 @layer components {
   .vc-visually-hidden:where(:not(:focus-within, :active)) {
     position: absolute !important;
@@ -183,8 +183,18 @@
     text-wrap: pretty;
   }
 
+  .vc-page :is(p, li, a, code) {
+    overflow-wrap: break-word;
+  }
+
   .vc-page section :is(p, li) {
     max-inline-size: 72ch;
+  }
+
+  .vc-callout-warn {
+    border: 1px solid rgba(251, 191, 36, 0.45);
+    border-inline-start: 4px solid #fbbf24;
+    background-color: rgba(120, 53, 15, 0.22);
   }
 
   @media (pointer: coarse) {
@@ -205,11 +215,19 @@
     }
 
     .vc-surface-card,
-    .vc-btn-primary,
+    .vc-callout-warn,
     .vc-btn-secondary {
       border: 1px solid CanvasText;
       background-color: Canvas;
+      background-image: none;
       color: CanvasText;
+    }
+
+    .vc-page .vc-btn-primary {
+      border: 1px solid CanvasText;
+      background-color: Canvas;
+      background-image: none;
+      color: LinkText;
     }
 
     .vc-page a:any-link {
@@ -227,7 +245,8 @@
   }
 
   @media print {
-    .vc-surface-card {
+    .vc-surface-card,
+    .vc-callout-warn {
       break-inside: avoid;
     }
   }

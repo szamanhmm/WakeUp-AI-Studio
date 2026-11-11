@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import TermsPage from './components/TermsPage';
 import PrivacyPolicyPage from './components/PrivacyPolicyPage';
 import VideoCameraPrivacyPolicyPage from './components/VideoCameraPrivacyPolicyPage';
+import VideoCameraTermsPage from './components/VideoCameraTermsPage';
 
 export default function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
@@ -33,12 +34,13 @@ export default function App() {
   const isTerms = normalized === '/terms';
   const isPrivacy = normalized === '/privacy-policy' || normalized === '/privacy';
   const isVideoCameraPrivacy = normalized === '/videocamera/privacy-policy';
+  const isVideoCameraTerms = normalized === '/videocamera/terms';
 
   return (
     <div className="min-h-screen bg-[#030712] text-[#eef0fb] selection:bg-cyan-500/30 selection:text-cyan-200">
       {/* Skip Link prior to Header Navigation */}
       <a
-        href={isVideoCameraPrivacy ? '#main-heading' : '#main'}
+        href={isVideoCameraPrivacy || isVideoCameraTerms ? '#main-heading' : '#main'}
         className="vc-skip-link vc-visually-hidden"
       >
         Skip to main content
@@ -51,6 +53,8 @@ export default function App() {
       <main id="main" tabIndex={-1} className="focus:outline-none">
         {isVideoCameraPrivacy ? (
           <VideoCameraPrivacyPolicyPage />
+        ) : isVideoCameraTerms ? (
+          <VideoCameraTermsPage />
         ) : isTerms ? (
           <TermsPage />
         ) : isPrivacy ? (
