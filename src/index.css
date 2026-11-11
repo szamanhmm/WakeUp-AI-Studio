@@ -2,6 +2,7 @@
 
 @layer base {
   :root {
+    color-scheme: dark;
     --cyber-bg: #030712;
     --cyber-cyan: #00f5d4;
     --cyber-teal: #00e5c7;
@@ -135,4 +136,346 @@
 
 .animate-scroll:hover {
   animation-play-state: paused;
+}
+
+/* Video Camera Legal & Data Safety Page (Cyber-Ocean Responsive Tables & A11y) */
+@layer components {
+  .vc-visually-hidden:where(:not(:focus-within, :active)) {
+    position: absolute !important;
+    clip-path: inset(50%) !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .vc-skip-link:focus-visible {
+    position: fixed;
+    inset-block-start: 0.75rem;
+    inset-inline-start: 0.75rem;
+    z-index: 60;
+    padding: 0.65rem 1rem;
+    background-color: #22d3ee;
+    color: #030712;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    outline: 3px solid #67e8f9;
+    outline-offset: 3px;
+  }
+
+  :where(.vc-page a:any-link, .vc-page button, .vc-table-wrapper[tabindex="0"]):focus-visible {
+    outline: 3px solid #22d3ee;
+    outline-offset: 3px;
+  }
+
+  .vc-page h1,
+  .vc-page h2,
+  .vc-page h3,
+  .vc-table thead th {
+    text-wrap: balance;
+  }
+
+  .vc-page p,
+  .vc-page li {
+    text-wrap: pretty;
+  }
+
+  .vc-page section :is(p, li) {
+    max-inline-size: 72ch;
+  }
+
+  .vc-code {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    color: #67e8f9;
+    background-color: #0b1220;
+    border: 1px solid #0e7490;
+    padding: 0.1em 0.4em;
+    border-radius: 0.35rem;
+    font-size: 0.875em;
+    overflow-wrap: anywhere;
+  }
+
+  .vc-toc-list a {
+    display: inline-flex;
+    align-items: center;
+    min-block-size: 24px;
+  }
+
+  .vc-table-wrapper {
+    overflow: auto;
+    max-inline-size: 100%;
+    container-type: inline-size;
+    border: 1px solid #64748b;
+    border-radius: 0.75rem;
+    background-color: #060b18;
+    scrollbar-color: #64748b #0b1220;
+    scrollbar-width: thin;
+  }
+
+  @supports not (scrollbar-color: auto) {
+    .vc-table-wrapper::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+    .vc-table-wrapper::-webkit-scrollbar-track {
+      background: #0b1220;
+    }
+    .vc-table-wrapper::-webkit-scrollbar-thumb {
+      background: #64748b;
+      border-radius: 6px;
+    }
+  }
+
+  @media (min-width: 48em) and (min-height: 30em) {
+    .vc-table-wrapper {
+      max-block-size: min(38rem, 76dvh);
+    }
+  }
+
+  .vc-table {
+    inline-size: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: start;
+    font-size: 0.9375rem;
+  }
+
+  .vc-table caption {
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    color: #f8fafc;
+    text-align: start;
+    background-color: #0b162d;
+    border-block-end: 1px solid #64748b;
+  }
+
+  .vc-table thead {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 2;
+  }
+
+  .vc-table thead th {
+    background-color: #0f1d38;
+    color: #f8fafc;
+    font-weight: 700;
+    padding: 0.75rem 0.9rem;
+    border-block-end: 1px solid #64748b;
+    border-inline-end: 1px solid #334155;
+    vertical-align: top;
+  }
+
+  .vc-table thead th:last-child {
+    border-inline-end: 0;
+  }
+
+  .vc-table tbody th {
+    position: sticky;
+    inset-inline-start: 0;
+    z-index: 1;
+    background-color: #060b18;
+    color: #f8fafc;
+    font-weight: 700;
+    padding: 0.75rem 0.9rem;
+    border-block-end: 1px solid #334155;
+    border-inline-end: 1px solid #64748b;
+    vertical-align: top;
+    min-inline-size: 11rem;
+  }
+
+  .vc-table tbody td {
+    color: #cbd5e1;
+    padding: 0.75rem 0.9rem;
+    border-block-end: 1px solid #334155;
+    border-inline-end: 1px solid #1e293b;
+    vertical-align: top;
+  }
+
+  .vc-table tbody td:last-child {
+    border-inline-end: 0;
+  }
+
+  .vc-table tbody tr:last-child th,
+  .vc-table tbody tr:last-child td {
+    border-block-end: 0;
+  }
+
+  .vc-tbl-data-safety {
+    --col-2: "Specific Data Type";
+    --col-3: "Purpose & Processing";
+    --col-4: "Sharing & User Controls";
+  }
+
+  .vc-tbl-sdk {
+    --col-2: "Provider";
+    --col-3: "Operational Purpose";
+    --col-4: "Provider Privacy Policy";
+  }
+
+  .vc-tbl-permissions {
+    --col-2: "When Requested";
+    --col-3: "Operational Purpose";
+    --col-4: "Off-Device Transmission";
+  }
+
+  .vc-tbl-gdpr {
+    --col-2: "Legal Basis (GDPR)";
+    --col-3: "How to Exercise Choice";
+  }
+
+  .vc-tbl-retention {
+    --col-2: "Where Stored";
+    --col-3: "Retention Period";
+    --col-4: "How to Delete";
+  }
+
+  @container (width < 40em) {
+    .vc-table,
+    .vc-table caption,
+    .vc-table thead,
+    .vc-table tbody,
+    .vc-table tr,
+    .vc-table th,
+    .vc-table td {
+      display: block;
+    }
+
+    .vc-table thead {
+      display: none;
+    }
+
+    .vc-table tbody {
+      padding: 0.75rem;
+    }
+
+    .vc-table tbody tr {
+      margin-block-end: 1rem;
+      border: 1px solid #64748b;
+      border-radius: 0.625rem;
+      overflow: clip;
+      background-color: #060b18;
+    }
+
+    .vc-table tbody tr:last-child {
+      margin-block-end: 0;
+    }
+
+    .vc-table tbody th {
+      position: sticky;
+      inset-block-start: 0;
+      inset-inline-start: auto;
+      z-index: 2;
+      background-color: #0f1d38;
+      border-inline-end: 0;
+      border-block-end: 1px solid #64748b;
+      min-inline-size: 0;
+    }
+
+    .vc-table tbody td {
+      border-inline-end: 0;
+      border-block-end: 1px solid #334155;
+    }
+
+    .vc-table tbody td:last-child {
+      border-block-end: 0;
+    }
+
+    .vc-table tbody td:nth-child(2)::before {
+      content: var(--col-2) ": ";
+      display: block;
+      font-weight: 700;
+      color: #67e8f9;
+      margin-block-end: 0.2rem;
+    }
+
+    .vc-table tbody td:nth-child(3)::before {
+      content: var(--col-3) ": ";
+      display: block;
+      font-weight: 700;
+      color: #67e8f9;
+      margin-block-end: 0.2rem;
+    }
+
+    .vc-table tbody td:nth-child(4)::before {
+      content: var(--col-4) ": ";
+      display: block;
+      font-weight: 700;
+      color: #67e8f9;
+      margin-block-end: 0.2rem;
+    }
+  }
+
+  @media (pointer: coarse) {
+    .vc-page nav a,
+    .vc-toc-list a {
+      min-block-size: 44px;
+      padding-block: 0.45rem;
+    }
+  }
+
+  @media (forced-colors: active) {
+    .vc-page {
+      background-color: Canvas;
+      color: CanvasText;
+    }
+
+    .vc-page .cyber-ocean-gradient-text {
+      -webkit-text-fill-color: currentColor;
+      background: none;
+    }
+
+    .vc-surface-card,
+    .vc-callout,
+    .vc-table-wrapper,
+    .vc-table tbody tr,
+    .vc-btn-primary,
+    .vc-btn-secondary,
+    .vc-code {
+      border: 1px solid CanvasText;
+      background-color: Canvas;
+      color: CanvasText;
+    }
+
+    .vc-table caption,
+    .vc-table thead th,
+    .vc-table tbody th {
+      background-color: Canvas;
+      color: CanvasText;
+      border-color: CanvasText;
+    }
+
+    .vc-page a:any-link {
+      color: LinkText;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .vc-page *,
+    .vc-page *::before,
+    .vc-page *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+
+  @media print {
+    .vc-skip-link,
+    .vc-actions {
+      display: none;
+    }
+
+    .vc-table-wrapper {
+      max-block-size: none;
+      overflow: visible;
+    }
+
+    .vc-surface-card,
+    .vc-callout {
+      break-inside: avoid;
+    }
+  }
 }

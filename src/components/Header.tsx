@@ -133,7 +133,7 @@ export default function Header() {
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.label}
-                href={item.href}
+                href={isHome ? item.href : `/${item.href}`}
                 onClick={closeMenu}
                 className="px-4 py-3 rounded-xl bg-slate-900/60 border border-slate-800/80 text-sm font-medium text-slate-200 hover:text-cyan-300 hover:border-cyan-500/40 hover:bg-slate-800/80 transition-all"
               >
@@ -144,7 +144,7 @@ export default function Header() {
 
           <div className="pt-3">
             <a
-              href="#contact"
+              href={isHome ? '#contact' : '/#contact'}
               onClick={closeMenu}
               className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-400 to-indigo-500 text-[#030712] font-semibold text-sm shadow-[0_0_20px_rgba(0,245,212,0.4)]"
             >
