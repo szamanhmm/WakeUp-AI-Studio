@@ -1,6 +1,0 @@
-{
-  "name": "WakeUp AI",
-  "description": "WakeUp AI designs and builds Android, iOS, and SaaS products. Turning early-stage ideas into applications that think, adapt, and scale.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
